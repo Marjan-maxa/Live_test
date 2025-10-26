@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
-        title: Text('Contact List',style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color:Colors.white) ,),
+        title: Text('Contact List' ,),
         centerTitle: true,
       ),
       body: Column(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_live/container.dart';
 import 'package:test_live/home.dart';
 
 class Myapp extends StatelessWidget {
@@ -7,7 +8,7 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: cort(),
     );
   }
 }
