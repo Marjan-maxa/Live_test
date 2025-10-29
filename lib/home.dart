@@ -19,7 +19,6 @@ class Home extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
         title: Text('Contact List' ,),
         centerTitle: true,
       ),
@@ -31,10 +30,8 @@ class Home extends StatelessWidget {
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 hintText:'Hasan',
-                hintStyle: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),
-                border: OutlineInputBorder(
 
-                )
+
 
               ),
             ),
@@ -46,10 +43,7 @@ class Home extends StatelessWidget {
               maxLength: 11,
               decoration: InputDecoration(
                   hintText:'01745-777777',
-                  hintStyle: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),
-                  border: OutlineInputBorder(
 
-                  )
 
               ),
             ),
@@ -61,11 +55,6 @@ class Home extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blueGrey,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.vertical()
-                    )
                   ),
                     onPressed: (){}, child: Text('ADD')),
               )),
@@ -86,7 +75,15 @@ class Home extends StatelessWidget {
              );
            }),
          ),
-       )
+       ),
+          SizedBox(height: 10,),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+            ),
+              onPressed: (){
+              Navigator.pushNamed(context, 'contai');
+              }, child: Text('Container')
+          )
         ],
       ),
     );
