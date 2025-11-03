@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:test_live/Buttons.dart';
+import 'package:test_live/Dashbo=ard.dart';
 import 'package:test_live/THM_mode/theme.dart';
+import 'package:test_live/Tour_booking.dart';
+import 'package:test_live/aspectratio_response.dart';
 import 'package:test_live/container.dart';
 import 'package:test_live/home.dart';
 
@@ -49,11 +53,16 @@ class Myapp extends StatelessWidget {
       darkTheme: Thememode.dark,
       themeMode: ThemeMode.light,
       home: cort(),
-      initialRoute: 'Log',
+      initialRoute: 'Tour',
       routes: {
         'Log':(context)=>LogIn(),
         'hm':(context)=>Home(),
         'contai':(context)=>cort(),
+        'BTN':(context)=>btn(),
+        'Dash':(context)=>dash(),
+        'Ratio':(context)=>ratio(),
+        'Cort':(context)=>cort(),
+        'Tour':(context)=>tour(),
       },
     );
   }
