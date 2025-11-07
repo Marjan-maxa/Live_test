@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+
 class New_card extends StatelessWidget {
   final img,title;
   const New_card({

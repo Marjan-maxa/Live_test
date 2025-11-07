@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'card/list_card.dart';
 
+
 class tour extends StatelessWidget {
   const tour({super.key});
 
@@ -112,7 +113,11 @@ class tour extends StatelessWidget {
                       child: New_card(img: tours[index]['image']! ,title: tours[index]['title'],),
                     );
                   }),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                      child: Text('Trending Packages',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                  ),
                   Card(
 
                     child: Padding(

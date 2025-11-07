@@ -6,6 +6,8 @@ import 'package:test_live/Tour_booking.dart';
 import 'package:test_live/aspectratio_response.dart';
 import 'package:test_live/container.dart';
 import 'package:test_live/home.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:test_live/todo_list.dart';
 
 import 'log_in.dart';
 
@@ -14,7 +16,14 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return ScreenUtilInit(
+        designSize: const Size(360, 690),
+    minTextAdapt: true,
+    splitScreenMode: true,
+    // Use builder only if you need to use library outside ScreenUtilInit context
+    builder: (_ , child) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false ,
       // theme: ThemeData(
       //   inputDecorationTheme: InputDecorationTheme(
       //     border: OutlineInputBorder(
@@ -53,7 +62,7 @@ class Myapp extends StatelessWidget {
       darkTheme: Thememode.dark,
       themeMode: ThemeMode.light,
       home: cort(),
-      initialRoute: 'Tour',
+      initialRoute: 'Log',
       routes: {
         'Log':(context)=>LogIn(),
         'hm':(context)=>Home(),
@@ -63,7 +72,12 @@ class Myapp extends StatelessWidget {
         'Ratio':(context)=>ratio(),
         'Cort':(context)=>cort(),
         'Tour':(context)=>tour(),
+        'Todo':(context)=>todo(),
       },
+    );
+
+    }
     );
   }
 }
+
